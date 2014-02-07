@@ -37,7 +37,7 @@ class MessageAdmin(admin.ModelAdmin):
     '信息管理'
     exclude = ('apps',)
     inlines = [AppInline,]
-    search_fields = ['code', 'zh_CN', 'en', ]
+    search_fields = ['code', 'zh_CN', ]
     #date_hierarchy = 'create_at'
     list_filter = ['apps', ]
     list_display = ('code', 'zh_CN', 'en', )

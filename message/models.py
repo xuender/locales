@@ -33,7 +33,7 @@ class Message(models.Model):
     apps = models.ManyToManyField(App)
     code = models.CharField(
             unique=True,
-            max_length=10,
+            max_length=20,
             help_text='最大10个字母',
             verbose_name='代码',
             )
