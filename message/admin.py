@@ -40,7 +40,7 @@ class AppAdmin(admin.ModelAdmin):
                 b = True
                 f.write('   "' + t.code + '":{\n    "message": "')
                 if key == 'en':
-                    f.write(t.en)
+                    f.write(t.en.encode('utf-8'))
                 if key == 'zh_CN':
                     f.write(t.zh_CN.encode('utf-8'))
                 if key == 'zh_TW':
